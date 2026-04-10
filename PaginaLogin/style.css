@@ -1,0 +1,74 @@
+body {
+    background-color: #E8D4BE;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+#titulos-LOL {
+    width: 484px;
+    height: 218px;
+    background-color: #E3C8AA;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 20px;
+    gap: 35px;
+}
+
+#titulo-principal {
+    font-family: 'montserrat', sans-serif;
+    font-size: 200px;
+    color: #333333;
+    margin: 0px;
+    line-height: 150px;
+    font-weight: 900;
+}
+    
+#titulo-menor {
+    font-family: 'montserrat', sans-serif;
+    font-size: 35px;
+    color: #333333;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin-left: 15px;
+}
+
+#botão {
+    width: 150px;
+    height: 60px;
+    background-color: #E3C8AA;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-text {
+    font-family: 'montserrat', sans-serif;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#area-login {
+    width: 1000px;
+    height: 450px;
+    background-color: #E3C8AA;
+}
+
+#campo-user {
+    width: 700px;
+    height: 40px;
+    background-color: #f8ecdf;
+}
+
+#campo-senha {
+
+}
