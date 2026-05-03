@@ -1,5 +1,5 @@
 body {
-    background-color: #E8D4BE;
+    background-color: #E8D4BE !important;
 
     display: flex;
     justify-content: center;
@@ -38,37 +38,65 @@ body {
     margin-left: 15px;
 }
 
-#botão {
-    width: 150px;
-    height: 60px;
+#area-login {
+    width: 1000px;
+    height: 450px;
     background-color: #E3C8AA;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 80px;
+    border-radius: 30px;
+    border: 5px solid #333333;
 }
 
-#login-text {
+#campo-user {
+    width: 800px;
+    height: 70px;
+    background-color: #f8ecdf;
+    border-radius: 20px;
+    border: 5px solid #333333;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+}
+
+#campo-senha {
+    width: 800px;
+    height: 70px;
+    background-color: #f8ecdf;
+    border-radius: 20px;
+    border: 5px solid #333333;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+}
+
+#botão {
+    width: 180px;
+    height: 70px;
+    background-color: #E3C8AA !important;
+    color: #333333 !important;
+    box-shadow: 2px 4px 8px #333333;
+    border-radius: 30px;
+    display: flex !important;
+    justify-content: center !important; 
+    align-items: center !important;
+    border: 5px solid #333333;
+    cursor: pointer;
+    transition-duration: 0.4s;
     font-family: 'montserrat', sans-serif;
     font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1;
+    padding: 0;
 }
 
-#area-login {
-    width: 1000px;
-    height: 450px;
-    background-color: #E3C8AA;
-}
-
-#campo-user {
-    width: 700px;
-    height: 40px;
-    background-color: #f8ecdf;
-}
-
-#campo-senha {
-
+#botão:hover {
+    background-color: #333333;
+    color:#E3C8AA;
+    box-shadow: 6px 9px 16px #333333;
 }

@@ -1,0 +1,52 @@
+body {
+    background-color: #E8D4BE;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+#titulos-LOL {
+    width: 242px;
+    height: 109px;
+    background-color: #E3C8AA;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 10px;
+    gap: 17.5px;
+}
+
+#titulo-principal {
+    font-family: 'montserrat', sans-serif;
+    font-size: 100px;
+    color: #333333;
+    margin: 0px;
+    line-height: 75px;
+    font-weight: 900;
+}
+    
+#titulo-menor {
+    font-family: 'montserrat', sans-serif;
+    font-size: 17.5px;
+    color: #333333;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 50;
+    margin-left: 7.5px;
+}
+
+#bloco-central {
+    width: 1200px;
+    height: 500px;
+    background-color: #E3C8AA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    border-radius: 30px;
+    border: 5px solid #333333;
+}
