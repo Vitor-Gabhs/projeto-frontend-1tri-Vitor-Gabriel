@@ -1,5 +1,5 @@
 body {
-    background-color: #E8D4BE !important;
+    background-color: #E8D4BE;
 
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ body {
     color: #333333;
     margin: 0px;
     line-height: 150px;
-    font-weight: 900;
+    font-weight: bold;
 }
     
 #titulo-menor {
@@ -76,21 +76,18 @@ body {
 #botão {
     width: 180px;
     height: 70px;
-    background-color: #E3C8AA !important;
-    color: #333333 !important;
+    background-color: #E3C8AA;
+    color: #333333;
     box-shadow: 2px 4px 8px #333333;
     border-radius: 30px;
-    display: flex !important;
-    justify-content: center !important; 
-    align-items: center !important;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     border: 5px solid #333333;
     cursor: pointer;
     transition-duration: 0.4s;
     font-family: 'montserrat', sans-serif;
     font-size: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     line-height: 1;
     padding: 0;
 }
