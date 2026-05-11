@@ -9,7 +9,7 @@ body {
     gap: 45px;
 }
 
-#titulos-LOL {
+.titulos-LOL {
     width: 484px;
     height: 218px;
     background-color: #E3C8AA;
@@ -19,7 +19,7 @@ body {
     gap: 35px;
 }
 
-#titulo-principal {
+.titulo-principal {
     font-family: 'montserrat', sans-serif;
     font-size: 200px;
     color: #333333;
@@ -27,8 +27,8 @@ body {
     line-height: 150px;
     font-weight: 900;
 }
-    
-#titulo-menor {
+
+.titulo-menor {
     font-family: 'montserrat', sans-serif;
     font-size: 35px;
     color: #333333;
@@ -38,7 +38,7 @@ body {
     margin-left: 15px;
 }
 
-#area-login {
+.area-login {
     width: 1000px;
     height: 420px;
     background-color: #E3C8AA;
@@ -52,7 +52,7 @@ body {
     padding-top: 30px;
 }
 
-#campo-user {
+.campo-user {
     width: 800px;
     height: 70px;
     background-color: #f8ecdf;
@@ -63,7 +63,7 @@ body {
     font-family: 'montserrat', sans-serif;
 }
 
-#campo-senha {
+.campo-senha {
     width: 800px;
     height: 70px;
     background-color: #f8ecdf;
@@ -74,7 +74,7 @@ body {
     font-family: 'montserrat', sans-serif;
 }
 
-#botão {
+.botão {
     width: 180px;
     height: 70px;
     background-color: #E3C8AA;
@@ -82,7 +82,7 @@ body {
     box-shadow: 2px 4px 8px #333333;
     border-radius: 30px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     border: 5px solid #333333;
     cursor: pointer;
@@ -91,10 +91,59 @@ body {
     font-size: 35px;
     line-height: 1;
     padding: 0;
+    transition: 0.7777s;
 }
 
-#botão:hover {
+.botão:hover {
+    transition: 0.7777s;
     background-color: #333333;
-    color:#E3C8AA;
+    color: #E3C8AA;
     box-shadow: 6px 9px 16px #333333;
+}
+
+.bloco-central {
+    width: 1000px;
+    height: 600px;
+    background-color: #E3C8AA;
+    border: #333333 solid 7px;
+    border-radius: 20px;
+    flex-direction: row;
+}
+
+.botao-criar {
+    transition: 0.7777s;
+    width: 70px;
+    height: 70px;
+    background-color: #E3C8AA;
+    color: #333333;
+    box-shadow: 2px 4px 8px #333333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    border: 5px solid #333333;
+    position: fixed;
+    right: 300px;
+    cursor: pointer;
+}
+
+.botao-criar:hover {
+    transition: 0.7777s;
+    background-color: #333333;
+    color: #E3C8AA;
+    box-shadow: 6px 9px 16px #333333;
+}
+
+.bi-plus-lg {
+    transition: 0.7777s;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+
+.bi-plus-lg:hover {
+    transition: 0.7777s;
+    color: #E3C8AA;
 }

@@ -1,24 +1,41 @@
 <?php
 session_start();  // sempre na primeira linha quando usa sessão
+require_once '../mock_data.php';
 
-// Pega o que veio do formulário
-$email = $_POST['email'];
-$senha = $_POST['senha'];
+// Validação básica dos campos (evita avisos quando acessado diretamente)
+if (empty($_POST['email']) || empty($_POST['senha'])) {
+    header('Location: login.php?erro=2');
+    exit;
+}
 
-// Busca o usuário no banco (ou no mock)
-require_once 'conexao.php';
-$pdo = getConexao();
+// Trim para evitar espaços acidentais
+$email = trim($_POST['email'] ?? '');
+$senha = trim($_POST['senha'] ?? '');
 
-$stmt = $pdo->prepare('SELECT * FROM usuarios WHERE email = :email');
-$stmt->execute([':email' => $email]);
-$usuario = $stmt->fetch();
+// Usar o caminho absoluto para garantir que carregue o arquivo correto
+require_once __DIR__ . '/mock_data.php';
+$usuarios = MockData::get('usuarios');
 
-// Verifica se existe e se a senha bate
-if ($usuario && password_verify($senha, $usuario['senha'])) {
+// Busca o usuário no mock (comparação case-insensitive para maior tolerância)
+$usuario = null;
+foreach ($usuarios as $u) {
+    if (strtolower($u['email']) === strtolower($email)) {
+        $usuario = $u;
+        break;
+    }
+}
+
+// Verifica senha (se usuário encontrado)
+$senhaOk = $usuario ? password_verify($senha, $usuario['senha']) : false;
+
+
+file_put_contents(__DIR__ . '/login_debug.log', json_encode($debug, JSON_UNESCAPED_UNICODE) . PHP_EOL, FILE_APPEND);
+
+if ($usuario && $senhaOk) {
     // Login OK — salva na sessão e manda para a área certa
-    $_SESSION['usuario_id']   = $usuario['id'];
+    $_SESSION['usuario_id'] = $usuario['id'];
     $_SESSION['usuario_nome'] = $usuario['nome'];
-    $_SESSION['perfil']       = $usuario['perfil_id'] == 1 ? 'cliente' : 'funcionario';
+    $_SESSION['perfil'] = $usuario['perfil_id'] == 1 ? 'cliente' : 'funcionario';
 
     if ($_SESSION['perfil'] === 'funcionario') {
         header('Location: funcionario/pedidos.php');
