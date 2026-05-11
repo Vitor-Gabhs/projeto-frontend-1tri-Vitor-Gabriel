@@ -1,6 +1,5 @@
 <?php
 session_start();  // sempre na primeira linha quando usa sessão
-require_once '../mock_data.php';
 
 // Validação básica dos campos (evita avisos quando acessado diretamente)
 if (empty($_POST['email']) || empty($_POST['senha'])) {
