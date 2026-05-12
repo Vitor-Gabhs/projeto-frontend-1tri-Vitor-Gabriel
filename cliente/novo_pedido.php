@@ -55,7 +55,6 @@ if (file_exists('mock_store.json')) {
 
 }
 
-
 ?>
 
 
@@ -74,20 +73,29 @@ if (file_exists('mock_store.json')) {
 </head>
 
 <body>
-    <div class="area_pedido_novo">
-        <p class="titulo_pedido_novo">Novo Pedido</p>
-        <form action="pedidos.php" method="POST">
-            <label>selecione as peças:</label>
-            <select name="peca_id" required>
+   <div class="card shadow-sm p-4">
+    <form action="pedidos.php" method="POST">
+        <div class="mb-3">
+            <label class="form-label">Qual peça deseja lavar?</label>
+            <select name="peca_id" class="form-select" required>
                 <?php foreach ($pecas as $p): ?>
-                    <option value="<?= $p['id'] ?>"><?= $p['nome'] ?> - R$<?= $p['preco_unitario'] ?></option>
+                    <option value="<?= $p['id'] ?>">
+                        <?= $p['nome'] ?> - R$ <?= number_format($p['preco_unitario'], 2, ',', '.') ?>
+                    </option>
                 <?php endforeach; ?>
             </select>
-            <label>Quantidade:</label>
-            <input type="number" name="quantidade" min="1" value="1" required> 
-            <button type="submit" name="btn_fechar_pedido">Finalizar Pedido</button>
-        </form>
-    </div>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Quantidade</label>
+            <input type="number" name="quantidade" class="form-control" min="1" value="1">
+        </div>
+
+        <button type="submit" name="btn_fechar_pedido" class="btn btn-primary w-100">
+            <i class="bi bi-check-lg"></i> Confirmar Pedido
+        </button>
+    </form>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

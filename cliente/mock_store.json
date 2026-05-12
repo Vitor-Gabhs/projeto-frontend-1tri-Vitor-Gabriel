@@ -1,0 +1,234 @@
+{
+    "perfis": [
+        {
+            "id": 1,
+            "nome": "cliente"
+        },
+        {
+            "id": 2,
+            "nome": "funcionario"
+        }
+    ],
+    "status_pedido": [
+        {
+            "id": 1,
+            "nome": "ABERTO",
+            "sequencia": 1
+        },
+        {
+            "id": 2,
+            "nome": "RECEBIDO",
+            "sequencia": 2
+        },
+        {
+            "id": 3,
+            "nome": "EM_LAVAGEM",
+            "sequencia": 3
+        },
+        {
+            "id": 4,
+            "nome": "AGUARDANDO_RETIRADA",
+            "sequencia": 4
+        },
+        {
+            "id": 5,
+            "nome": "CONCLUIDO",
+            "sequencia": 5
+        },
+        {
+            "id": 6,
+            "nome": "CANCELADO",
+            "sequencia": 6
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Maria Silva",
+            "email": "maria@lavanderia.com",
+            "senha": "$2y$10$Xqnzh5oKsuidkXsCuzpCQ.ab2XVLW0Oks8jI7lyjlcdZ66t3fSMNu",
+            "cpf": "11111111101",
+            "telefone": "41999990001",
+            "perfil_id": 2,
+            "criado_em": "2025-01-10 08:00:00"
+        },
+        {
+            "id": 2,
+            "nome": "M\u00e1rio Souza",
+            "email": "mario@lavanderia.com",
+            "senha": "$2y$10$Xqnzh5oKsuidkXsCuzpCQ.ab2XVLW0Oks8jI7lyjlcdZ66t3fSMNu",
+            "cpf": "11111111102",
+            "telefone": "41999990002",
+            "perfil_id": 2,
+            "criado_em": "2025-01-10 08:05:00"
+        },
+        {
+            "id": 3,
+            "nome": "Jo\u00e3o Pereira",
+            "email": "joao@email.com",
+            "senha": "$2y$10$Xqnzh5oKsuidkXsCuzpCQ.ab2XVLW0Oks8jI7lyjlcdZ66t3fSMNu",
+            "cpf": "22222222201",
+            "telefone": "41988880001",
+            "perfil_id": 1,
+            "criado_em": "2025-01-11 09:00:00"
+        },
+        {
+            "id": 4,
+            "nome": "Jos\u00e9 Oliveira",
+            "email": "jose@email.com",
+            "senha": "$2y$10$Xqnzh5oKsuidkXsCuzpCQ.ab2XVLW0Oks8jI7lyjlcdZ66t3fSMNu",
+            "cpf": "22222222202",
+            "telefone": "41988880002",
+            "perfil_id": 1,
+            "criado_em": "2025-01-11 09:10:00"
+        },
+        {
+            "id": 5,
+            "nome": "Joana Santos",
+            "email": "joana@email.com",
+            "senha": "$2y$10$Xqnzh5oKsuidkXsCuzpCQ.ab2XVLW0Oks8jI7lyjlcdZ66t3fSMNu",
+            "cpf": "22222222203",
+            "telefone": "41988880003",
+            "perfil_id": 1,
+            "criado_em": "2025-01-11 09:20:00"
+        },
+        {
+            "id": 6,
+            "nome": "Joaquina Lima",
+            "email": "joaquina@email.com",
+            "senha": "$2y$10$Xqnzh5oKsuidkXsCuzpCQ.ab2XVLW0Oks8jI7lyjlcdZ66t3fSMNu",
+            "cpf": "22222222204",
+            "telefone": "41988880004",
+            "perfil_id": 1,
+            "criado_em": "2025-01-11 09:30:00"
+        }
+    ],
+    "pecas": [
+        {
+            "id": 1,
+            "nome": "Cal\u00e7a",
+            "preco_unitario": 12,
+            "criado_em": "2025-01-10 08:00:00"
+        },
+        {
+            "id": 2,
+            "nome": "Camisa",
+            "preco_unitario": 8,
+            "criado_em": "2025-01-10 08:00:00"
+        },
+        {
+            "id": 3,
+            "nome": "Camiseta",
+            "preco_unitario": 6,
+            "criado_em": "2025-01-10 08:00:00"
+        },
+        {
+            "id": 4,
+            "nome": "Meia",
+            "preco_unitario": 3,
+            "criado_em": "2025-01-10 08:00:00"
+        },
+        {
+            "id": 5,
+            "nome": "Cueca",
+            "preco_unitario": 3.5,
+            "criado_em": "2025-01-10 08:00:00"
+        }
+    ],
+    "pedidos": [
+        {
+            "id": 1,
+            "cliente_id": 3,
+            "status_id": 1,
+            "valor_total": 48,
+            "observacoes": null,
+            "criado_em": "2025-05-01 10:00:00",
+            "atualizado_em": "2025-05-01 10:00:00"
+        },
+        {
+            "id": 2,
+            "cliente_id": 4,
+            "status_id": 3,
+            "valor_total": 56,
+            "observacoes": "Roupa delicada, favor lavar a frio.",
+            "criado_em": "2025-05-02 14:00:00",
+            "atualizado_em": "2025-05-03 08:30:00"
+        },
+        {
+            "id": 3,
+            "cliente_id": 5,
+            "status_id": 5,
+            "valor_total": 20,
+            "observacoes": null,
+            "criado_em": "2025-04-20 09:00:00",
+            "atualizado_em": "2025-04-22 16:00:00"
+        },
+        {
+            "id": 4,
+            "cliente_id": 3,
+            "status_id": 1,
+            "valor_total": 30,
+            "observacoes": null,
+            "criado_em": "2026-05-12 13:27:59",
+            "atualizado_em": "2026-05-12 13:27:59"
+        }
+    ],
+    "itens_pedido": [
+        {
+            "id": 1,
+            "pedido_id": 1,
+            "peca_id": 1,
+            "quantidade": 2,
+            "preco_unit": 12,
+            "subtotal": 24
+        },
+        {
+            "id": 2,
+            "pedido_id": 1,
+            "peca_id": 2,
+            "quantidade": 3,
+            "preco_unit": 8,
+            "subtotal": 24
+        },
+        {
+            "id": 3,
+            "pedido_id": 2,
+            "peca_id": 3,
+            "quantidade": 5,
+            "preco_unit": 6,
+            "subtotal": 30
+        },
+        {
+            "id": 4,
+            "pedido_id": 2,
+            "peca_id": 4,
+            "quantidade": 4,
+            "preco_unit": 3,
+            "subtotal": 12
+        },
+        {
+            "id": 5,
+            "pedido_id": 2,
+            "peca_id": 5,
+            "quantidade": 4,
+            "preco_unit": 3.5,
+            "subtotal": 14
+        },
+        {
+            "id": 6,
+            "pedido_id": 3,
+            "peca_id": 1,
+            "quantidade": 1,
+            "preco_unit": 12,
+            "subtotal": 12
+        },
+        {
+            "id": 7,
+            "pedido_id": 3,
+            "peca_id": 2,
+            "quantidade": 1,
+            "preco_unit": 8,
+            "subtotal": 8
+        }
+    ]
+}

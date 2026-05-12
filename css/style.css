@@ -146,3 +146,15 @@ body {
     transition: 0.7777s;
     color: #E3C8AA;
 }
+
+.card {
+    transition: transform 0.2s;
+    border-radius: 12px;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.badge {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
