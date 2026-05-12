@@ -111,6 +111,9 @@ body {
 }
 
 .botao-criar {
+    position: absolute;
+    top: 190px;
+    right: 30px;
     transition: 0.7777s;
     width: 70px;
     height: 70px;
@@ -119,11 +122,10 @@ body {
     box-shadow: 2px 4px 8px #333333;
     border-radius: 50%;
     display: flex;
-    justify-content: end;
-    align-items: start;
-    border: 5px solid #333333;
-    position: fixed;
+    justify-content: center;
+    align-items: center;
     right: 300px;
+    border: 5px solid #333333;
     cursor: pointer;
 }
 
@@ -137,9 +139,6 @@ body {
 .bi-plus-lg {
     transition: 0.7777s;
     font-size: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #333333;
 }
 
